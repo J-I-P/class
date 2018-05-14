@@ -9,3 +9,12 @@ if ospath.exists(filename):
     basename = ospath.basename(filename)
     print("最後的檔案或路徑名稱：" + basename)
 
+    dirname = ospath.dirname(filename)
+    print("目前檔案目錄路徑：" + dirname)
+
+    print("是否為目錄：" + ospath.isdir(filename))
+
+    fullname, fname = ospath.split(filename)
+    print("目錄名稱：" + fullname)
+    print("檔名：" + fname)
+
